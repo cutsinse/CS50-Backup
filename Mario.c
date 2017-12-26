@@ -18,7 +18,7 @@ int main(void)
 
     for (int n = 1; n <= h; n++)
     {
-        space(h-n);
+        space(h-n-1);
         hash(n);
 
     }
