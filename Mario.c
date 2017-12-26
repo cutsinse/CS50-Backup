@@ -8,8 +8,9 @@ void dash(int n);
 
 int main(void)
 {
-    hash(3);
-    dash(3);
+    int h = get_int("Height:");
+    hash(h);
+    dash(h);
 }
 
 
@@ -17,8 +18,9 @@ void say(string s, int n)
 {
     for (int i = 0; i <= n; i++)
     {
-        printf("%s\n", s);
+        printf("%s", s);
     }
+    printf("\n");
 }
 
 void hash(int n)
