@@ -2,6 +2,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void hash(void);
+
 int main(void)
 {
     int h;
@@ -11,5 +13,10 @@ int main(void)
     }
     while(h < 0 || h > 23);
 
-    printf("%i\n", h);
+    hash();
+}
+
+void hash(void)
+{
+    printf("#\n");
 }
