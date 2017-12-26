@@ -8,9 +8,19 @@ void dash(int n);
 
 int main(void)
 {
-    int h = get_int("Height:");
-    hash(h);
-    dash(h);
+    int h;
+    do
+    {
+        h = get_int("Height:");
+    }
+    while(h < 0 || h > 23);
+
+
+    for (int n = 0; n <= h; n++)
+    {
+        hash(n);
+        dash(n);
+    }
 }
 
 
