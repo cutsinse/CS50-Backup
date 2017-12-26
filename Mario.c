@@ -11,12 +11,12 @@ int main(void)
     int h;
     do
     {
-        h = get_int("Height:");
+        h = get_int("Height: ");
     }
     while(h < 0 || h > 23);
 
 
-    for (int n = 0; n <= h; n++)
+    for (int n = 1; n <= h; n++)
     {
         space(h-n);
         hash(n);
