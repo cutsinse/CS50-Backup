@@ -2,21 +2,33 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void hash(void);
+
+void hash(int n);
+
 
 int main(void)
 {
     int h;
     do
     {
-       h = get_int("Height: ");
+        h = get_int("Height:");
     }
     while(h < 0 || h > 23);
 
-    hash();
+
+    for (int n = 0; n <= h; n++)
+    {
+        hash(n);
+
+    }
 }
 
-void hash(void)
+
+void hash(int n)
 {
-    printf("#\n");
+    for (int i = 0; i <= n; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
