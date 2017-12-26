@@ -16,9 +16,9 @@ int main(void)
     while(h < 0 || h > 23);
 
 
-    for (int n = 1; n <= h; n++)
+    for (int n = 0; n <= h; n++)
     {
-        space(h-n);
+        space(h-n-1);
         hash(n);
 
     }
