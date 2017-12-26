@@ -4,7 +4,7 @@
 
 
 void hash(int n);
-
+void space(int n);
 
 int main(void)
 {
@@ -18,6 +18,7 @@ int main(void)
 
     for (int n = 0; n <= h; n++)
     {
+        space(h-n);
         hash(n);
 
     }
@@ -31,4 +32,12 @@ void hash(int n)
         printf("#");
     }
     printf("\n");
+}
+
+void space(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        printf(" ");
+    }
 }
