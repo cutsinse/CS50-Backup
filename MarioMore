@@ -1,0 +1,67 @@
+/* This is the more comfortable implimentation of the Mario Pyramid Problem */
+#include <cs50.h>
+#include <stdio.h>
+
+
+void hash1(int n);
+void hash2(int n);
+void space(int n);
+
+int main(void)
+{
+    int h;
+    do
+    {
+        h = get_int("Height: ");
+    }
+    while (h < 0 || h > 23);
+
+if (h == 0)
+{
+    printf("");
+}
+else
+{
+    for (int n = 0; n < h; n++)
+    {
+        space(h - n - 2);
+        hash1(n);
+        printf("  ");
+        hash2(n);
+        /*The hash2 function has the new line integrated, but hash 1 does not.*/
+        /* Starting n at 0 results in an extra line where there is only 1 hash, even when the user inputs 0.
+        starting at 1 corrects this error*/
+    }
+}
+}
+
+/* right pyramid variable: print the "#" mark n number of times, then add a new line. */
+void hash2(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        printf("#");
+
+    }
+    printf("\n");
+}
+
+/* left pyramid, prints the "#" mark, but does not change to a new line, instead the right pyramid will */
+
+void hash1(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        printf("#");
+
+    }
+}
+
+/*variable: print a " " (blank space) n number of times, WITHOUT adding a new line. Allows for easier math*/
+void space(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        printf(" ");
+    }
+}
