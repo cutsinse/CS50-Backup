@@ -15,11 +15,17 @@ int main(void)
 
     int ct = 0;
 
-}
+    while (c >= 25)
+    {
+        c = c -25;
+        ct++;
+    }
+    while (c >= 10 && c < 25)
+    {
+        c = c -10;
+        ct++;
+    }
 
-
-
-void quarter(int ct)
-{
+    printf("%i %i\n", c, ct);
 
 }
