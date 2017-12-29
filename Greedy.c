@@ -16,7 +16,7 @@ int main(void)
     d = round(d); /*rounds values from 419.34829394 (ect) to 420*/
     int c = d; /* truncates or removes the decimals in order to only work with ints */
 
-    int ct = 0;
+    int ct = 0; /*ct is "count" or number of coins used so far */
 
     while (c >= 25)
     {
